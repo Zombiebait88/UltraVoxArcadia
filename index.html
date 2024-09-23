@@ -3,50 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UltraVox Arcadia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>UltraVox Arcadia - Truth in the Noise!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo-container">
-            <img src="logo.png" alt="UltraVox Arcadia Logo">
-        </div>
-        <nav class="main-nav">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videos/cyberpunk_cityscape.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <div class="logo">UltraVox Arcadia</div>
+        <nav>
             <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Corporate Insights</a></li>
-                <li><a href="#">Dystopia Watch</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Mission Statement</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="content">
-        <section class="headline-news">
-            <article>
-                <h2>BREAKING: Corporate Scandal Uncovered!</h2>
-                <p>The Truth About ArcaneTek’s Latest Secret Weapon: How It Could Change Neo-Arcadia Forever...</p>
-            </article>
-            <article>
-                <h2>Exclusive Interview with a Technomancer Dissident</h2>
-                <p>Inside the mind of Ashara Zenth, and her fight against the mega-corporations...</p>
-            </article>
-        </section>
+    <section class="hero">
+        <div class="overlay"></div>
+        <video autoplay muted loop id="heroVideo">
+            <source src="videos/cyberpunk_cityscape.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-text">
+            <h1>Truth in the Noise!</h1>
+            <p>The only source for real news in Neo-Arcadia.</p>
+        </div>
+    </section>
 
-        <aside class="sidebar">
-            <h3>Top Stories</h3>
-            <ul>
-                <li><a href="#">Neo-Arcadia's Latest Power Struggle</a></li>
-                <li><a href="#">Reality Prism: Fact or Myth?</a></li>
-                <li><a href="#">What You Need to Know About the Underhive</a></li>
-            </ul>
-        </aside>
-    </main>
+    <section class="breaking-news">
+        <h2>Breaking News</h2>
+        <div class="news-ticker">
+            <p id="ticker">Rival gangs clash in Sector 12 || Reality Prism found beneath Tir Val'run ruins || CEO of TetraCorp announces new AI initiative...</p>
+        </div>
+    </section>
 
-    <footer class="main-footer">
-        <p>&copy; 2145 UltraVox Arcadia. All Rights Reserved.</p>
-    </footer>
+    <section class="articles">
+        <h2>Featured Articles</h2>
+        
+        <div class="article">
+            <h3>Chaos in the Slums: Orc Motorcycle Gang Massacre</h3>
+            <p><strong>Date:</strong> September 22, 2145</p>
+            <p>In a nightmarish scene, the streets of Neo-Arcadia witnessed a brutal massacre...</p>
+        </div>
+
+        <div class="article">
+            <h3>Cyberpunk Streets</h3>
+            <img src="images/cyberpunk_streets.jpg" alt="Cyberpunk Streets" />
+            <p>Explore the vibrant and chaotic streets of Neo-Arcadia.</p>
+        </div>
+        <div class="article">
+            <h3>AI Future</h3>
+            <img src="images/ai_future.jpg" alt="AI Future" />
+            <p>Discover the integration of AI in everyday life in Neo-Arcadia.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2145 UltraVox Arcadia. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script> <!-- Link to your JavaScript file if applicable -->
+    </section>
 </body>
 </html>
